@@ -62,7 +62,7 @@ void print_decoded_utf8char(unsigned int n){
    else if(n<=0xffffff){
       putchar((n>>16)&0xff);
       putchar((n>>8)&0xff);
-      putchar(n&0x3f);
+      putchar(n&0xff);
    }
    else{
       putchar(((n>>24)&0xff));
